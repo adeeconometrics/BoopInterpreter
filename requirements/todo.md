@@ -1,0 +1,9 @@
+- [x] Come up with minimum feature set
+- [x] send invitaion on GH
+- [ ] BNF Subset of Py's Grammar 
+- [ ] System Design 
+- [ ] Delegation of task 
+- [ ] Documentation format --> Doxygen> Sphynx
+- [ ] Production rules for CFG  
+- [ ] Parser 
+- [ ] Interpreter 
