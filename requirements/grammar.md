@@ -1,3 +1,5 @@
+
+```
 program ::= [stmt] 
 
 stmt ::= [expr] | [stmt::class] | [stmt::function] | 
@@ -10,5 +12,5 @@ stmt ::= [expr] | [stmt::class] | [stmt::function] |
 	stmt::decision ::= if([condition]) {[stmt]} | 
 					if([condition]) {[stmt]} else {[stmt]} |
 	stmt::var ::= [id::variable] = [expr]
-
+```
 
