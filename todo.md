@@ -1,0 +1,29 @@
+- [ ] Configure the build system
+- [ ] Declaration of Scanner
+- [ ] Definition of Scanner
+- [ ] Declaration of TokenType
+- [ ] Definition of TokenType
+- [ ] Declaration of Token
+- [ ] Definition of Token
+- [ ] Declaration of ErrorHandler
+- [ ] Definition of ErrorHandler
+- [ ] Declaration of Stmt
+- [ ] Definition of Stmt
+- [ ] Declaration of Expr
+- [ ] Definition of Expr
+- [ ] Declaration of Callable
+- [ ] Definition of Callable
+- [ ] Declaration of Class
+- [ ] Definition of Class
+- [ ] Declaration of Function
+- [ ] Definition of Function
+- [ ] Declaration of Instance 
+- [ ] Definition of Instance
+- [ ] Declaration of Parser
+- [ ] Definition of Parser
+- [ ] Declaration of Environment
+- [ ] Definition of Environment 
+- [ ] Declaration of Evaluator
+- [ ] Definition of Evaluator
+- [ ] Documentation
+- [ ] PPT Presentation 
