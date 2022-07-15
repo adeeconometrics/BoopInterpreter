@@ -5,6 +5,7 @@
 - [ ] Definition of TokenType
 - [x] Declaration of Token
 - [ ] Definition of Token
+- [x] Declaration of Types
 - [ ] Declaration of ErrorHandler
 - [ ] Definition of ErrorHandler
 - [ ] Declaration of Stmt
