@@ -1,6 +1,6 @@
-- [ ] Configure the build system
+- [x] Configure the build system
 - [x] Declaration of Scanner
-- [ ] Definition of Scanner
+- [x] Definition of Scanner
 - [x] Declaration of TokenType
 - [ ] Definition of TokenType
 - [x] Declaration of Token
@@ -28,6 +28,23 @@
 - [ ] Definition of Evaluator
 - [ ] Documentation
 - [ ] PPT Presentation 
+
+---
+
+Important parts to implement
+- Main
+- ErrorHandler
+- Scanner
+    - Scanner
+    - Token
+    - TokenType
+- Parser
+    - Expr
+    - Stmt
+    - Function
+    - Callable
+    - Class
+    - Instance 
 
 
 ---
