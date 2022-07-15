@@ -6,8 +6,10 @@
 - [x] Declaration of Token
 - [ ] Definition of Token
 - [x] Declaration of Types
-- [ ] Declaration of ErrorHandler
-- [ ] Definition of ErrorHandler
+- [x] Declaration of ErrorHandler
+- [x] Definition of ErrorHandler
+- [x] Declaration of FileReader
+- [x] Definition of FileReader
 - [x] Declaration of Stmt
 - [x] Definition of Stmt
 - [x] Declaration of Expr
@@ -32,19 +34,19 @@
 ---
 
 Important parts to implement
-- Main
-- ErrorHandler
+- [x] Main
+- [x] ErrorHandler
 - Scanner
-    - Scanner
-    - Token
-    - TokenType
+    - [x] Scanner
+    - [x] Token
+    - [x] TokenType
 - Parser
-    - Expr
-    - Stmt
-    - Function
-    - Callable
-    - Class
-    - Instance 
+    - [x] Expr
+    - [x] Stmt
+    - [ ] Function
+    - [ ] Callable
+    - [ ] Class
+    - [ ] Instance 
 
 
 ---
