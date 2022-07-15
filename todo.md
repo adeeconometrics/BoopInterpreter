@@ -9,9 +9,9 @@
 - [ ] Declaration of ErrorHandler
 - [ ] Definition of ErrorHandler
 - [x] Declaration of Stmt
-- [ ] Definition of Stmt
+- [x] Definition of Stmt
 - [x] Declaration of Expr
-- [ ] Definition of Expr
+- [x] Definition of Expr
 - [ ] Declaration of Callable
 - [ ] Definition of Callable
 - [ ] Declaration of Class
