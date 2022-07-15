@@ -27,3 +27,12 @@
 - [ ] Definition of Evaluator
 - [ ] Documentation
 - [ ] PPT Presentation 
+
+
+---
+Problems to solve:
+- [ ] Find out a way to conviniently parse `std::any`
+    - attempt: use `any_cast<decltype(obj.type())>()` -- not effective as `obj.type()` returns `std::type_info`
+    - attempt: use `any_cast<auto>()` -- not effective as the compiler cannot deduce types 
+    - suggested: use `std::variant` and `std::visit`
+        - cost: cognitive overhead to implement template constructs which might require another translation unit 
