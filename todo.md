@@ -8,9 +8,9 @@
 - [x] Declaration of Types
 - [ ] Declaration of ErrorHandler
 - [ ] Definition of ErrorHandler
-- [ ] Declaration of Stmt
+- [x] Declaration of Stmt
 - [ ] Definition of Stmt
-- [ ] Declaration of Expr
+- [x] Declaration of Expr
 - [ ] Definition of Expr
 - [ ] Declaration of Callable
 - [ ] Definition of Callable
