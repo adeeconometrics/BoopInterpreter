@@ -75,11 +75,11 @@ class Expr: Uncopyable {
   };
 
   struct Literal final : public Expr {
-    Literal(const std::any &_value) : m_value(_value) {}
+    Literal(const LiteralType &_value) : m_value(_value) {}
 
     template <typename T> auto accept(const Visitor<T> &visitor) -> T override;
 
-    const std::any m_value;
+    const LiteralType m_value;
   };
 
   struct Logical final : public Expr {

@@ -17,8 +17,8 @@ namespace boop {
         auto operator=(Uncopyable &&) noexcept -> Uncopyable& = delete;
     }
 
-    typedef std::variant<std::string, double, float, int> Literal;
-    typedef std::optional<Literal> OptionalLiteral;
+    typedef std::variant<std::string, double, float, int> LiteralType;
+    typedef std::optional<LiteralType> OptionalLiteral;
 }
 
 #endif // __TYPES_H__
