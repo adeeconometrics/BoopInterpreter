@@ -1,9 +1,9 @@
 - [ ] Configure the build system
-- [ ] Declaration of Scanner
+- [x] Declaration of Scanner
 - [ ] Definition of Scanner
-- [ ] Declaration of TokenType
+- [x] Declaration of TokenType
 - [ ] Definition of TokenType
-- [ ] Declaration of Token
+- [x] Declaration of Token
 - [ ] Definition of Token
 - [ ] Declaration of ErrorHandler
 - [ ] Definition of ErrorHandler
@@ -36,3 +36,6 @@ Problems to solve:
     - attempt: use `any_cast<auto>()` -- not effective as the compiler cannot deduce types 
     - suggested: use `std::variant` and `std::visit`
         - cost: cognitive overhead to implement template constructs which might require another translation unit 
+
+- [ ] Subtitute `Object literal` as `std::optional<std::variant<double, std::string>>`
+    - alternative: use abstract base class and declare virtual methods 
