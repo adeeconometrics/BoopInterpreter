@@ -123,6 +123,33 @@ LambdaPL/fast:
 	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/build
 .PHONY : LambdaPL/fast
 
+src/ASTNodes.o: src/ASTNodes.cpp.o
+
+.PHONY : src/ASTNodes.o
+
+# target to build an object file
+src/ASTNodes.cpp.o:
+	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/ASTNodes.cpp.o
+.PHONY : src/ASTNodes.cpp.o
+
+src/ASTNodes.i: src/ASTNodes.cpp.i
+
+.PHONY : src/ASTNodes.i
+
+# target to preprocess a source file
+src/ASTNodes.cpp.i:
+	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/ASTNodes.cpp.i
+.PHONY : src/ASTNodes.cpp.i
+
+src/ASTNodes.s: src/ASTNodes.cpp.s
+
+.PHONY : src/ASTNodes.s
+
+# target to generate assembly for a file
+src/ASTNodes.cpp.s:
+	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/ASTNodes.cpp.s
+.PHONY : src/ASTNodes.cpp.s
+
 src/ErrorHandler.o: src/ErrorHandler.cpp.o
 
 .PHONY : src/ErrorHandler.o
@@ -149,33 +176,6 @@ src/ErrorHandler.s: src/ErrorHandler.cpp.s
 src/ErrorHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/ErrorHandler.cpp.s
 .PHONY : src/ErrorHandler.cpp.s
-
-src/Expr.o: src/Expr.cpp.o
-
-.PHONY : src/Expr.o
-
-# target to build an object file
-src/Expr.cpp.o:
-	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/Expr.cpp.o
-.PHONY : src/Expr.cpp.o
-
-src/Expr.i: src/Expr.cpp.i
-
-.PHONY : src/Expr.i
-
-# target to preprocess a source file
-src/Expr.cpp.i:
-	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/Expr.cpp.i
-.PHONY : src/Expr.cpp.i
-
-src/Expr.s: src/Expr.cpp.s
-
-.PHONY : src/Expr.s
-
-# target to generate assembly for a file
-src/Expr.cpp.s:
-	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/Expr.cpp.s
-.PHONY : src/Expr.cpp.s
 
 src/FileReader.o: src/FileReader.cpp.o
 
@@ -258,33 +258,6 @@ src/Scanner.cpp.s:
 	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/Scanner.cpp.s
 .PHONY : src/Scanner.cpp.s
 
-src/Stmt.o: src/Stmt.cpp.o
-
-.PHONY : src/Stmt.o
-
-# target to build an object file
-src/Stmt.cpp.o:
-	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/Stmt.cpp.o
-.PHONY : src/Stmt.cpp.o
-
-src/Stmt.i: src/Stmt.cpp.i
-
-.PHONY : src/Stmt.i
-
-# target to preprocess a source file
-src/Stmt.cpp.i:
-	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/Stmt.cpp.i
-.PHONY : src/Stmt.cpp.i
-
-src/Stmt.s: src/Stmt.cpp.s
-
-.PHONY : src/Stmt.s
-
-# target to generate assembly for a file
-src/Stmt.cpp.s:
-	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/Stmt.cpp.s
-.PHONY : src/Stmt.cpp.s
-
 src/Token.o: src/Token.cpp.o
 
 .PHONY : src/Token.o
@@ -348,12 +321,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... LambdaPL"
+	@echo "... src/ASTNodes.o"
+	@echo "... src/ASTNodes.i"
+	@echo "... src/ASTNodes.s"
 	@echo "... src/ErrorHandler.o"
 	@echo "... src/ErrorHandler.i"
 	@echo "... src/ErrorHandler.s"
-	@echo "... src/Expr.o"
-	@echo "... src/Expr.i"
-	@echo "... src/Expr.s"
 	@echo "... src/FileReader.o"
 	@echo "... src/FileReader.i"
 	@echo "... src/FileReader.s"
@@ -363,9 +336,6 @@ help:
 	@echo "... src/Scanner.o"
 	@echo "... src/Scanner.i"
 	@echo "... src/Scanner.s"
-	@echo "... src/Stmt.o"
-	@echo "... src/Stmt.i"
-	@echo "... src/Stmt.s"
 	@echo "... src/Token.o"
 	@echo "... src/Token.i"
 	@echo "... src/Token.s"

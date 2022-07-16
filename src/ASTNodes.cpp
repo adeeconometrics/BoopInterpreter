@@ -133,7 +133,7 @@ StmtPrint::StmtPrint(ExprPtrVariant expr) : expression(std::move(expr)) {}
 StmtBlock::StmtBlock(std::vector<StmtPtrVariant> statements)
     : statements(std::move(statements)) {}
 
-VarStmt::VarStmt(Token varName, std::optional<ExprPtrVariant> initializer)
+StmtVariable::StmtVariable(Token varName, std::optional<ExprPtrVariant> initializer)
     : varName(std::move(varName)), initializer(std::move(initializer)) {}
 
 StmtIf::StmtIf(ExprPtrVariant condition, StmtPtrVariant thenBranch,
@@ -179,7 +179,7 @@ auto make_block_stmt(std::vector<StmtPtrVariant> statements) -> StmtPtrVariant {
 
 auto make_var_stmt(Token varName, std::optional<ExprPtrVariant> initializer)
     -> StmtPtrVariant {
-  return std::make_unique<VarStmt>(varName, std::move(initializer));
+  return std::make_unique<StmtVariable>(varName, std::move(initializer));
 }
 
 auto make_if_stmt(ExprPtrVariant condition, StmtPtrVariant thenBranch,

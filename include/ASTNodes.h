@@ -15,7 +15,7 @@
  * VTables and gets rid of performance overhead vtables incurr
  *
  */
-namespace cpplox::AST {
+namespace boop::AST {
 
 // forward declaration of expression node types
 struct ExprBinary;
@@ -57,30 +57,7 @@ using ExprPtrVariant =
                  ExprConditionalPtr, ExprPostfixPtr, ExprVariablePtr,
                  ExprAssignmentPtr, ExprLogicalPtr, ExprCallPtr, ExprFunctionPtr,
                  ExprGetPtr, ExprSetPtr, ExprThisPtr, ExprSuperPtr>;
-
-// methods that creates expression nodes 
-auto make_binary_expr(ExprPtrVariant left, Token op, ExprPtrVariant right)
-    -> ExprPtrVariant;
-auto make_unary_expr(Token op, ExprPtrVariant right) -> ExprPtrVariant;
-auto make_grouping_expr(ExprPtrVariant right) -> ExprPtrVariant;
-auto make_literal_expr(OptionalLiteral literal) -> ExprPtrVariant;
-auto make_conditional_expr(ExprPtrVariant condition, ExprPtrVariant then,
-                          ExprPtrVariant elseBranch) -> ExprPtrVariant;
-auto make_postfix_expr(ExprPtrVariant left, Token op) -> ExprPtrVariant;
-auto make_variable_expr(Token varName) -> ExprPtrVariant;
-auto make_assignment_expr(Token varName, ExprPtrVariant expr) -> ExprPtrVariant;
-auto make_logical_expr(ExprPtrVariant left, Token op, ExprPtrVariant right)
-    -> ExprPtrVariant;
-auto make_call_expr(ExprPtrVariant callee, Token paren,
-                   std::vector<ExprPtrVariant> arguments) -> ExprPtrVariant;
-auto make_function_expr(std::vector<Token> params,
-                   std::vector<StmtPtrVariant> fnBody) -> ExprPtrVariant;
-auto make_get_expr(ExprPtrVariant expr, Token name) -> ExprPtrVariant;
-auto make_set_expr(ExprPtrVariant expr, Token name, ExprPtrVariant value)
-    -> ExprPtrVariant;
-auto make_this_expr(Token keyword) -> ExprPtrVariant;
-auto make_super_expr(Token keyword, Token method) -> ExprPtrVariant;
-
+                 
 // forward declaration of statement node types
 struct StmtExpr;
 struct StmtPrint;
@@ -110,6 +87,30 @@ using StmtPtrVariant =
     std::variant<ExprStmtPtr, PrintStmtPtr, BlockStmtPtr, VarStmtPtr, IfStmtPtr,
                  WhileStmtPtr, ForStmtPtr, FuncStmtPtr, RetStmtPtr,
                  ClassStmtPtr>;
+
+// methods that creates expression nodes 
+auto make_binary_expr(ExprPtrVariant left, Token op, ExprPtrVariant right)
+    -> ExprPtrVariant;
+auto make_unary_expr(Token op, ExprPtrVariant right) -> ExprPtrVariant;
+auto make_grouping_expr(ExprPtrVariant right) -> ExprPtrVariant;
+auto make_literal_expr(OptionalLiteral literal) -> ExprPtrVariant;
+auto make_conditional_expr(ExprPtrVariant condition, ExprPtrVariant then,
+                          ExprPtrVariant elseBranch) -> ExprPtrVariant;
+auto make_postfix_expr(ExprPtrVariant left, Token op) -> ExprPtrVariant;
+auto make_variable_expr(Token varName) -> ExprPtrVariant;
+auto make_assignment_expr(Token varName, ExprPtrVariant expr) -> ExprPtrVariant;
+auto make_logical_expr(ExprPtrVariant left, Token op, ExprPtrVariant right)
+    -> ExprPtrVariant;
+auto make_call_expr(ExprPtrVariant callee, Token paren,
+                   std::vector<ExprPtrVariant> arguments) -> ExprPtrVariant;
+auto make_function_expr(std::vector<Token> params,
+                   std::vector<StmtPtrVariant> fnBody) -> ExprPtrVariant;
+auto make_get_expr(ExprPtrVariant expr, Token name) -> ExprPtrVariant;
+auto make_set_expr(ExprPtrVariant expr, Token name, ExprPtrVariant value)
+    -> ExprPtrVariant;
+auto make_this_expr(Token keyword) -> ExprPtrVariant;
+auto make_super_expr(Token keyword, Token method) -> ExprPtrVariant;
+
 
 
 // methods that creates statement nodes

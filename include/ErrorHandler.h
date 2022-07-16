@@ -4,10 +4,10 @@
 #include <string>
 #include <vector>
 
+namespace boop {
+
 using std::string;
 using std::vector;
-
-namespace boop {
 
 class ErrorHandler {
 

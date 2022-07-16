@@ -11,7 +11,7 @@ using std::vector;
 #include "Scanner.h"
 #include "Token.h"
 
-using boop;
+namespace boop {
 
 auto run(std::string_view source) {
   ErrorHandler error_handler{};
@@ -30,7 +30,10 @@ auto run_file(std::string_view c_str) -> void {
 
 auto run_prompt() -> void {}
 
-int main(int argc, char **argv) {
+}
+
+
+int main(void) {
   // if(argc > 1)
   //     exit(1);
   // else if (argc == 1) {

@@ -6,17 +6,29 @@
 
 #IncludeRegexTransform: 
 
-../include/Expr.h
-Token.h
-../include/Token.h
-Types.h
-../include/Types.h
+../include/ErrorHandler.h
+string
+-
+vector
+-
 
-../include/Stmt.h
-Expr.h
-../include/Expr.h
+../include/FileReader.h
+fstream
+-
+string
+-
+
+../include/Scanner.h
 Token.h
 ../include/Token.h
+ErrorHandler.h
+../include/ErrorHandler.h
+algorithm
+-
+string
+-
+unordered_map
+-
 vector
 -
 
@@ -38,11 +50,19 @@ variant
 string
 -
 
-/mnt/c/Users/amianadave/documents/LambdaInterpreter/src/Expr.cpp
-Expr.h
-/mnt/c/Users/amianadave/documents/LambdaInterpreter/src/Expr.h
-
-/mnt/c/Users/amianadave/documents/LambdaInterpreter/src/Stmt.cpp
-Stmt.h
-/mnt/c/Users/amianadave/documents/LambdaInterpreter/src/Stmt.h
+/mnt/c/Users/amianadave/documents/LambdaInterpreter/src/Main.cpp
+iostream
+-
+string
+-
+vector
+-
+ErrorHandler.h
+/mnt/c/Users/amianadave/documents/LambdaInterpreter/src/ErrorHandler.h
+FileReader.h
+/mnt/c/Users/amianadave/documents/LambdaInterpreter/src/FileReader.h
+Scanner.h
+/mnt/c/Users/amianadave/documents/LambdaInterpreter/src/Scanner.h
+Token.h
+/mnt/c/Users/amianadave/documents/LambdaInterpreter/src/Token.h
 
