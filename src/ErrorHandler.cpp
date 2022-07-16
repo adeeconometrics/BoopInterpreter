@@ -6,10 +6,8 @@
 namespace boop {
 
 auto ErrorHandler::report() const -> void {
-  for (const auto error : error_list) {
-    std::cout << "[line " + std::to_string(error.line) + "]Error " +
-                     error.where + ": " + error.message
-              << '\n';
+  for (const auto& error : error_list) {
+    std::cerr << error << '\n';
   }
 }
 

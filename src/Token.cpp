@@ -1,7 +1,7 @@
 #include "Token.h"
 
 namespace boop {
-    
+
 Token::Token(const TokenType type, const std::string &lexeme,
              const std::string &literal, const int line)
     : m_type(type), m_lexeme(lexeme), m_literal(literal), m_line(line) {}
@@ -61,12 +61,14 @@ auto Token::to_string() const -> std::string {
   };
 }
 
-auto get_line() const noexcept -> int {
-  return m_line;
+auto Token::get_line() const noexcept -> int { return m_line; }
+
+auto Token::get_lexeme() const noexcept -> std::string { return m_lexeme; }
+
+auto Token::get_type() const noexcept -> TokenType { return m_type; }
+
+const auto Token::get_optional_literal() const noexcept -> OptionalLiteral & {
+  m_literal;
 }
 
-auto get_lexeme() const noexcept -> std::string {
-  return m_lexeme;
-}
-
-}
+} // namespace boop
