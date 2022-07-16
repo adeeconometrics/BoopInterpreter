@@ -5,19 +5,8 @@
 #include <vector>
 
 namespace boop {
-
-using std::string;
-using std::vector;
-
-class ErrorHandler {
-
-public:
-  struct ErrorInfo {
-    int line{};
-    string where;
-    string message;
-  };
-
+  
+struct ErrorHandler {
   ErrorHandler() = default;
 
   /**
@@ -31,10 +20,9 @@ public:
    * the `error_list`
    *
    * @param line
-   * @param where
    * @param msg
    */
-  auto add(int line, const string &where, const string &msg) -> void;
+  auto add(int line, const std::string &msg) -> void;
 
   /**
    * @brief clears the data of `error_list`
@@ -49,8 +37,11 @@ public:
   bool has_found_error{};
 
 private:
-  vector<ErrorInfo> error_list;
+  std::vector<std::string> error_list;
 };
+
+// auto debug_print(const std::string& str) -> void;
+
 }
 
 #endif // __ERRORHANDLER_H__

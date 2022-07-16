@@ -60,4 +60,13 @@ auto Token::to_string() const -> std::string {
     return os.str();
   };
 }
+
+auto get_line() const noexcept -> int {
+  return m_line;
+}
+
+auto get_lexeme() const noexcept -> std::string {
+  return m_lexeme;
+}
+
 }
