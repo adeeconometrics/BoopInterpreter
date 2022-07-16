@@ -39,5 +39,5 @@ int main(int argc, char **argv) {
   //     run_prompt();
   // }
 
-  run_file("Sample.txt");
+  // run_file("Sample.txt");
 }

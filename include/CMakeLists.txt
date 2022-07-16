@@ -1,0 +1,12 @@
+add_library(
+	include
+	ErrorHandler.h
+	Expr.h
+	FileReader.h
+	Parser.h
+	Scanner.h
+	Stmt.h
+	Token.h
+	TokenType.h
+	Types.h
+)

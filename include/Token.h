@@ -19,7 +19,7 @@ public:
         const OptionalLiteral& _literal, int _line ); // uncertain how to parse std::any
     
     auto to_string(void) const noexcept -> std::string;
-    auto get_lexeme(void) const noexcept -> std::string; // not final
+    // auto get_lexeme(void) const noexcept -> std::string; // not final
 };
 
 }
