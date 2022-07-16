@@ -95,10 +95,10 @@ auto make_unary_expr(Token op, ExprPtrVariant right) -> ExprPtrVariant;
 auto make_grouping_expr(ExprPtrVariant right) -> ExprPtrVariant;
 auto make_literal_expr(OptionalLiteral literal) -> ExprPtrVariant;
 auto make_conditional_expr(ExprPtrVariant condition, ExprPtrVariant then,
-                          ExprPtrVariant elseBranch) -> ExprPtrVariant;
+                          ExprPtrVariant else_branch) -> ExprPtrVariant;
 auto make_postfix_expr(ExprPtrVariant left, Token op) -> ExprPtrVariant;
-auto make_variable_expr(Token varName) -> ExprPtrVariant;
-auto make_assignment_expr(Token varName, ExprPtrVariant expr) -> ExprPtrVariant;
+auto make_variable_expr(Token var_name) -> ExprPtrVariant;
+auto make_assignment_expr(Token var_name, ExprPtrVariant expr) -> ExprPtrVariant;
 auto make_logical_expr(ExprPtrVariant left, Token op, ExprPtrVariant right)
     -> ExprPtrVariant;
 auto make_call_expr(ExprPtrVariant callee, Token paren,
@@ -117,16 +117,16 @@ auto make_super_expr(Token keyword, Token method) -> ExprPtrVariant;
 auto make_expr_stmt(ExprPtrVariant expr) -> StmtPtrVariant;
 auto make_print_stmt(ExprPtrVariant expr) -> StmtPtrVariant;
 auto make_block_stmt(std::vector<StmtPtrVariant> statements) -> StmtPtrVariant;
-auto make_var_stmt(Token varName, std::optional<ExprPtrVariant> initializer)
+auto make_var_stmt(Token var_name, std::optional<ExprPtrVariant> initializer)
     -> StmtPtrVariant;
-auto make_if_stmt(ExprPtrVariant condition, StmtPtrVariant thenBranch,
-                 std::optional<StmtPtrVariant> elseBranch) -> StmtPtrVariant;
-auto make_while_stmt(ExprPtrVariant condition, StmtPtrVariant loopBody)
+auto make_if_stmt(ExprPtrVariant condition, StmtPtrVariant then_branch,
+                 std::optional<StmtPtrVariant> else_branch) -> StmtPtrVariant;
+auto make_while_stmt(ExprPtrVariant condition, StmtPtrVariant loop_body)
     -> StmtPtrVariant;
 auto make_for_stmt(std::optional<StmtPtrVariant> initializer,
                   std::optional<ExprPtrVariant> condition,
                   std::optional<ExprPtrVariant> increment,
-                  StmtPtrVariant loopBody) -> StmtPtrVariant;
+                  StmtPtrVariant loop_body) -> StmtPtrVariant;
 auto make_function_stmt(Token fName, ExprFunctionPtr ExprFunction) -> StmtPtrVariant;
 auto make_return_stmt(Token ret, std::optional<ExprPtrVariant> value)
     -> StmtPtrVariant;
@@ -160,10 +160,10 @@ struct ExprUnary final : public Uncopyable {
 
 struct ExprConditional final : public Uncopyable {
   ExprPtrVariant condition;
-  ExprPtrVariant thenBranch;
-  ExprPtrVariant elseBranch;
-  ExprConditional(ExprPtrVariant condition, ExprPtrVariant thenBranch,
-                  ExprPtrVariant elseBranch);
+  ExprPtrVariant then_branch;
+  ExprPtrVariant else_branch;
+  ExprConditional(ExprPtrVariant condition, ExprPtrVariant then_branch,
+                  ExprPtrVariant else_branch);
 };
 
 struct ExprPostfix final : public Uncopyable {
@@ -173,14 +173,14 @@ struct ExprPostfix final : public Uncopyable {
 };
 
 struct ExprVariable final : public Uncopyable {
-  Token varName;
-  explicit ExprVariable(Token varName);
+  Token var_name;
+  explicit ExprVariable(Token var_name);
 };
 
 struct ExprAssignment final : public Uncopyable {
-  Token varName;
+  Token var_name;
   ExprPtrVariant right;
-  ExprAssignment(Token varName, ExprPtrVariant right);
+  ExprAssignment(Token var_name, ExprPtrVariant right);
 };
 
 struct ExprLogical final : public Uncopyable {
@@ -245,40 +245,40 @@ struct StmtBlock final : public Uncopyable {
 };
 
 struct StmtVariable final : public Uncopyable {
-  Token varName;
+  Token var_name;
   std::optional<ExprPtrVariant> initializer;
-  explicit StmtVariable(Token varName, std::optional<ExprPtrVariant> initializer);
+  explicit StmtVariable(Token var_name, std::optional<ExprPtrVariant> initializer);
 };
 
 struct StmtIf final : public Uncopyable {
   ExprPtrVariant condition;
-  StmtPtrVariant thenBranch;
-  std::optional<StmtPtrVariant> elseBranch;
-  explicit StmtIf(ExprPtrVariant condition, StmtPtrVariant thenBranch,
-                  std::optional<StmtPtrVariant> elseBranch);
+  StmtPtrVariant then_branch;
+  std::optional<StmtPtrVariant> else_branch;
+  explicit StmtIf(ExprPtrVariant condition, StmtPtrVariant then_branch,
+                  std::optional<StmtPtrVariant> else_branch);
 };
 
 struct StmtWhile final : public Uncopyable {
   ExprPtrVariant condition;
-  StmtPtrVariant loopBody;
-  explicit StmtWhile(ExprPtrVariant condition, StmtPtrVariant loopBody);
+  StmtPtrVariant loop_body;
+  explicit StmtWhile(ExprPtrVariant condition, StmtPtrVariant loop_body);
 };
 
 struct StmtFor final : public Uncopyable {
   std::optional<StmtPtrVariant> initializer;
   std::optional<ExprPtrVariant> condition;
   std::optional<ExprPtrVariant> increment;
-  StmtPtrVariant loopBody;
+  StmtPtrVariant loop_body;
   explicit StmtFor(std::optional<StmtPtrVariant> initializer,
                    std::optional<ExprPtrVariant> condition,
                    std::optional<ExprPtrVariant> increment,
-                   StmtPtrVariant loopBody);
+                   StmtPtrVariant loop_body);
 };
 
 struct StmtFunction : public Uncopyable {
-  Token funcName;
+  Token function_name;
   ExprFunctionPtr ExprFunction;
-  StmtFunction(Token funcName, ExprFunctionPtr ExprFunction);
+  StmtFunction(Token function_name, ExprFunctionPtr ExprFunction);
 };
 
 struct StmtReturn : public Uncopyable {
