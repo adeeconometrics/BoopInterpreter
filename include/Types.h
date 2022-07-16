@@ -15,10 +15,10 @@ namespace boop {
 
         auto operator=(const Uncopyable&) noexcept -> Uncopyable& = delete;
         auto operator=(Uncopyable &&) noexcept -> Uncopyable& = delete;
-    }
+    };
 
-    typedef std::variant<std::string, double, float, int> LiteralType;
-    typedef std::optional<LiteralType> OptionalLiteral;
+    using LiteralType = std::variant<std::string, double, float, int>;
+    using OptionalLiteral = std::optional<LiteralType> ;
 }
 
 #endif // __TYPES_H__

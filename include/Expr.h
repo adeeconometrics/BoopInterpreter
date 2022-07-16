@@ -6,7 +6,23 @@
 
 namespace boop {
 
+
 class Expr: Uncopyable {
+
+  // forward declaration
+  struct Assign;
+  struct Binary;
+  struct Call;
+  struct Get;
+  struct Grouping;
+  struct Literal;
+  struct Logical;
+  struct Set;
+  struct Super;
+  struct This;
+  struct Unary;
+  struct Variable;
+
   template <typename T> class Visitor {
     virtual auto visit_assign_expr(const Assign &expr) -> T = 0;
     virtual auto visit_binary_expr(const Binary &expr) -> T = 0;

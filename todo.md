@@ -60,3 +60,5 @@ Problems to solve:
 
 - [ ] Subtitute `Object literal` as `std::optional<std::variant<double, std::string>>`
     - alternative: use abstract base class and declare virtual methods 
+- [ ] Visitor patter: a pain to implement with template constructs
+    - alternative: use `std::variant` instead of visitors

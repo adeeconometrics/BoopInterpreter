@@ -1,8 +1,10 @@
 cmake_minimum_required(VERSION 3.16)
 
+set(CMAKE_TRY_COMPILE_TARGET_TYPE "STATIC_LIBRARY")
+
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_FLAGS "-02 -Wall -Wextra -Werror -pedantic")
+set(CMAKE_CXX_FLAGS "-Wall -Wextra -Werror -pedantic")
 
 project(LambdaPL CXX)
 
