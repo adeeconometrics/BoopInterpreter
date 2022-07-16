@@ -130,7 +130,7 @@ auto make_for_stmt(std::optional<StmtPtrVariant> initializer,
 auto make_function_stmt(Token fName, ExprFunctionPtr ExprFunction) -> StmtPtrVariant;
 auto make_return_stmt(Token ret, std::optional<ExprPtrVariant> value)
     -> StmtPtrVariant;
-auto make_class_stmt(Token className, std::optional<ExprPtrVariant> superClass,
+auto make_class_stmt(Token class_name, std::optional<ExprPtrVariant> superClass,
                     std::vector<StmtPtrVariant> methods) -> StmtPtrVariant;
 
 
@@ -288,10 +288,10 @@ struct StmtReturn : public Uncopyable {
 };
 
 struct StmtClass : public Uncopyable {
-  Token className;
+  Token class_name;
   std::optional<ExprPtrVariant> superClass;
   std::vector<StmtPtrVariant> methods;
-  StmtClass(Token className, std::optional<ExprPtrVariant> superClass,
+  StmtClass(Token class_name, std::optional<ExprPtrVariant> superClass,
             std::vector<StmtPtrVariant> methods);
 };
 

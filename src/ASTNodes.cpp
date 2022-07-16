@@ -152,9 +152,9 @@ StmtFunction::StmtFunction(Token function_name, ExprFunctionPtr ExprFunction)
 StmtReturn::StmtReturn(Token ret, std::optional<ExprPtrVariant> value)
     : ret(std::move(ret)), value(std::move(value)) {}
 
-StmtClass::StmtClass(Token className, std::optional<ExprPtrVariant> superClass,
+StmtClass::StmtClass(Token class_name, std::optional<ExprPtrVariant> superClass,
                      std::vector<StmtPtrVariant> methods)
-    : className(std::move(className)), superClass(std::move(superClass)),
+    : class_name(std::move(class_name)), superClass(std::move(superClass)),
       methods(std::move(methods)) {}
 
 
@@ -203,9 +203,9 @@ auto make_return_stmt(Token ret, std::optional<ExprPtrVariant> value)
   return std::make_unique<StmtReturn>(std::move(ret), std::move(value));
 }
 
-auto make_class_stmt(Token className, std::optional<ExprPtrVariant> superClass,
+auto make_class_stmt(Token class_name, std::optional<ExprPtrVariant> superClass,
                     std::vector<StmtPtrVariant> methods) -> StmtPtrVariant {
-  return std::make_unique<StmtClass>(std::move(className),
+  return std::make_unique<StmtClass>(std::move(class_name),
                                      std::move(superClass), std::move(methods));
 }
 }
