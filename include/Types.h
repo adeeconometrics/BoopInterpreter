@@ -38,6 +38,7 @@ struct Uncopyable {
 using LiteralType = std::variant<std::string, double, float, int>;
 using OptionalLiteral = std::optional<LiteralType>;
 
+auto get_literal_string(const LiteralType &value) -> std::string;
 auto make_optional_literal(double value) -> OptionalLiteral;
 auto make_optional_literal(const std::string &lexeme) -> OptionalLiteral;
 
