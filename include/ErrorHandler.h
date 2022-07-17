@@ -3,6 +3,8 @@
 
 #include <string>
 #include <vector>
+#include <exception>
+#include <stdexcept>
 
 namespace boop {
   
@@ -40,7 +42,9 @@ private:
   std::vector<std::string> error_list;
 };
 
-// auto debug_print(const std::string& str) -> void;
+class RuntimeError: std::exception {};
+
+auto report_runtime_error(ErrorHandler& reporter, const Token& token, const std::string& msg) -> RuntimeError;
 
 }
 

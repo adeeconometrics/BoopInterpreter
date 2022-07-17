@@ -3,6 +3,8 @@ add_library(
 	ASTNodes.h
 	ErrorHandler.h
 	FileReader.h
+	Evaluator.h 
+	InterpreterModule.h
 	Parser.h
 	Scanner.h
 	Token.h

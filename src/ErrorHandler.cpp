@@ -18,4 +18,10 @@ auto ErrorHandler::add(int line, const std::string &msg) -> void {
 
 auto ErrorHandler::clear() -> void { error_list.clear(); }
 
+auto report_runtime_error(ErrorHandler &reporter, const Token &token,
+                          const std::string &msg) -> RuntimeError {
+  reporter.add(token.get_line(), token.get_lexeme() + ": " + msg);
+  return RuntimeError();
+}
+
 } // namespace boop

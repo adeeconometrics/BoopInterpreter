@@ -2,9 +2,9 @@
 - [x] Declaration of Scanner
 - [x] Definition of Scanner
 - [x] Declaration of TokenType
-- [ ] Definition of TokenType
+- [x] Definition of TokenType
 - [x] Declaration of Token
-- [ ] Definition of Token
+- [x] Definition of Token
 - [x] Declaration of Types
 - [x] Declaration of ErrorHandler
 - [x] Definition of ErrorHandler
@@ -43,12 +43,17 @@ Important parts to implement
 - Parser
     - [x] Expr
     - [x] Stmt
-    - [ ] Parser
+    - [x] Parser
     - [ ] Function
     - [ ] Callable
     - [ ] Class
     - [ ] Instance 
+- ASTPrinter
 
+---
+Things to Improve
+- [ ] replace `std::string` to `std::string_view` when applicable
+- [ ] write a JIT compiler (LLVM backend) 
 
 ---
 Problems to solve:
@@ -62,3 +67,11 @@ Problems to solve:
     - alternative: use abstract base class and declare virtual methods 
 - [ ] Visitor patter: a pain to implement with template constructs
     - alternative: use `std::variant` instead of visitors
+
+--- 
+Cpp17 features
+- `std::hold_alternative`
+- `std::variant_size_v`
+- `std::in_place`
+- `std::string::npos`
+- `std::hash<T>`
