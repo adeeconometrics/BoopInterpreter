@@ -44,11 +44,13 @@ Important parts to implement
     - [x] Expr
     - [x] Stmt
     - [x] Parser
-    - [ ] Function
-    - [ ] Callable
-    - [ ] Class
-    - [ ] Instance 
+    - [x] Function
+    - [x] Callable
+    - [x] Class
+    - [x] Instance 
 - ASTPrinter
+
+- Update scanner for MINUS_MINUS, PLUS_PLUS, QUESTION operators
 
 ---
 Things to Improve
@@ -75,3 +77,4 @@ Cpp17 features
 - `std::in_place`
 - `std::string::npos`
 - `std::hash<T>`
+- `std::enable_share_from_this<T>`

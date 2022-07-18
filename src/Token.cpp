@@ -1,6 +1,58 @@
 #include "Token.h"
+#include "TokenType.h"
 
 namespace boop {
+
+namespace {
+auto TokenTypeString(const TokenType value) -> const std::string & {
+  static const std::map<TokenType, std::string> lookup_table{
+      {TokenType::LEFT_PAREN, "LEFT_PAREN"},
+      {TokenType::RIGHT_PAREN, "RIGHT_PAREN"},
+      {TokenType::LEFT_BRACE, "LEFT_BRACE"},
+      {TokenType::RIGHT_BRACE, "RIGHT_BRACE"},
+      {TokenType::COMMA, "COMMA"},
+      {TokenType::COLON, "COLON"},
+      {TokenType::DOT, "DOT"},
+      // {TokenType::QUESTION, "QUESTION"},
+      {TokenType::SEMICOLON, "SEMICOLON"},
+      {TokenType::SLASH, "SLASH"},
+      {TokenType::STAR, "STAR"},
+      {TokenType::BANG, "BANG"},
+      {TokenType::BANG_EQUAL, "BANG_EQUAL"},
+      {TokenType::EQUAL, "EQUAL"},
+      {TokenType::EQUAL_EQUAL, "EQUAL_EQUAL"},
+      {TokenType::GREATER, "GREATER"},
+      {TokenType::GREATER_EQUAL, "GREATER_EQUAL"},
+      {TokenType::LESS, "LESS"},
+      {TokenType::LESS_EQUAL, "LESS_EQUAL"},
+      {TokenType::MINUS, "MINUS"},
+      {TokenType::MINUS_MINUS, "MINUS_MINUS"},
+      {TokenType::PLUS, "PLUS"},
+      {TokenType::PLUS_PLUS, "PLUS_PLUS"},
+      {TokenType::IDENTIFIER, "IDENTIFIER"},
+      {TokenType::STRING, "STRING"},
+      {TokenType::NUMBER, "NUMBER"},
+      {TokenType::AND, "AND"},
+      {TokenType::CLASS, "CLASS"},
+      {TokenType::ELSE, "ELSE"},
+      {TokenType::LOX_FALSE, "FALSE"},
+      {TokenType::FUN, "FUN"},
+      {TokenType::FOR, "FOR"},
+      {TokenType::IF, "IF"},
+      {TokenType::NIL, "NIL"},
+      {TokenType::OR, "OR"},
+      {TokenType::PRINT, "PRINT"},
+      {TokenType::RETURN, "RETURN"},
+      {TokenType::SUPER, "SUPER"},
+      {TokenType::THIS, "THIS"},
+      {TokenType::LOX_TRUE, "TRUE"},
+      {TokenType::VAR, "VAR"},
+      {TokenType::WHILE, "WHILE"},
+      {TokenType::LOX_EOF, "EOF"}};
+
+  return lookup_table.find(value)->second;
+}
+} // namespace
 
 Token::Token(const TokenType type, const std::string &lexeme,
              const std::string &literal, const int line)
@@ -69,6 +121,10 @@ auto Token::get_type() const noexcept -> TokenType { return m_type; }
 
 const auto Token::get_optional_literal() const noexcept -> OptionalLiteral & {
   m_literal;
+}
+
+auto Token::get_type_string() const noexcept -> std::string {
+  return TokenTypeString(this->m_type);
 }
 
 } // namespace boop

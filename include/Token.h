@@ -21,9 +21,10 @@ public:
     auto to_string() const noexcept -> std::string;
     auto get_type() const noexcept -> TokenType;
     auto get_lexeme() const noexcept -> std::string; // not final
-    auto get_line() const noexcept -> int; 
-    const auto get_optional_literal() const noexcept -> OptionalLiteral&;
-    
+    auto get_line() const noexcept -> int;
+    auto get_type_string() const noexcept -> std::string; 
+    const auto get_optional_literal() const noexcept
+        -> OptionalLiteral &;
 };
 
 }
