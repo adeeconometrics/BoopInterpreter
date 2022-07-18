@@ -295,6 +295,6 @@ struct StmtClass : public Uncopyable {
             std::vector<StmtPtrVariant> methods);
 };
 
-} // namespace cpplox::AST
+} // namespace boop::AST
 
 #endif // __ASTNODES_H__

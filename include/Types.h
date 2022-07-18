@@ -12,6 +12,7 @@
  *
  */
 
+#include "Environment.h"
 #include "ASTNodes.h"
 #include "Token.h"
 

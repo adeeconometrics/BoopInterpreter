@@ -1,5 +1,5 @@
-#include "Scanner.h"
-#include "TokenType.h"
+#include "../include/Scanner.h"
+#include "../include/TokenType.h"
 
 #include <string_view>
 #include <unordered_map>

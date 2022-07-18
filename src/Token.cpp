@@ -1,5 +1,5 @@
-#include "Token.h"
-#include "TokenType.h"
+#include "../include/Token.h"
+#include "../include/TokenType.h"
 
 namespace boop {
 

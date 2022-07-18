@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/amianadave/documents/LambdaInterpreter
+CMAKE_SOURCE_DIR = /mnt/c/Users/amianadave/Documents/LambdaInterpreter
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/amianadave/documents/LambdaInterpreter/build
+CMAKE_BINARY_DIR = /mnt/c/Users/amianadave/Documents/LambdaInterpreter/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/amianadave/documents/LambdaInterpreter/build/CMakeFiles /mnt/c/Users/amianadave/documents/LambdaInterpreter/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/amianadave/Documents/LambdaInterpreter/build/CMakeFiles /mnt/c/Users/amianadave/Documents/LambdaInterpreter/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/amianadave/documents/LambdaInterpreter/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/amianadave/Documents/LambdaInterpreter/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,6 +150,33 @@ src/ASTNodes.cpp.s:
 	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/ASTNodes.cpp.s
 .PHONY : src/ASTNodes.cpp.s
 
+src/Environment.o: src/Environment.cpp.o
+
+.PHONY : src/Environment.o
+
+# target to build an object file
+src/Environment.cpp.o:
+	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/Environment.cpp.o
+.PHONY : src/Environment.cpp.o
+
+src/Environment.i: src/Environment.cpp.i
+
+.PHONY : src/Environment.i
+
+# target to preprocess a source file
+src/Environment.cpp.i:
+	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/Environment.cpp.i
+.PHONY : src/Environment.cpp.i
+
+src/Environment.s: src/Environment.cpp.s
+
+.PHONY : src/Environment.s
+
+# target to generate assembly for a file
+src/Environment.cpp.s:
+	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/Environment.cpp.s
+.PHONY : src/Environment.cpp.s
+
 src/ErrorHandler.o: src/ErrorHandler.cpp.o
 
 .PHONY : src/ErrorHandler.o
@@ -176,6 +203,33 @@ src/ErrorHandler.s: src/ErrorHandler.cpp.s
 src/ErrorHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/ErrorHandler.cpp.s
 .PHONY : src/ErrorHandler.cpp.s
+
+src/Evaluator.o: src/Evaluator.cpp.o
+
+.PHONY : src/Evaluator.o
+
+# target to build an object file
+src/Evaluator.cpp.o:
+	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/Evaluator.cpp.o
+.PHONY : src/Evaluator.cpp.o
+
+src/Evaluator.i: src/Evaluator.cpp.i
+
+.PHONY : src/Evaluator.i
+
+# target to preprocess a source file
+src/Evaluator.cpp.i:
+	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/Evaluator.cpp.i
+.PHONY : src/Evaluator.cpp.i
+
+src/Evaluator.s: src/Evaluator.cpp.s
+
+.PHONY : src/Evaluator.s
+
+# target to generate assembly for a file
+src/Evaluator.cpp.s:
+	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/Evaluator.cpp.s
+.PHONY : src/Evaluator.cpp.s
 
 src/FileReader.o: src/FileReader.cpp.o
 
@@ -204,6 +258,33 @@ src/FileReader.cpp.s:
 	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/FileReader.cpp.s
 .PHONY : src/FileReader.cpp.s
 
+src/InterpreterModule.o: src/InterpreterModule.cpp.o
+
+.PHONY : src/InterpreterModule.o
+
+# target to build an object file
+src/InterpreterModule.cpp.o:
+	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/InterpreterModule.cpp.o
+.PHONY : src/InterpreterModule.cpp.o
+
+src/InterpreterModule.i: src/InterpreterModule.cpp.i
+
+.PHONY : src/InterpreterModule.i
+
+# target to preprocess a source file
+src/InterpreterModule.cpp.i:
+	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/InterpreterModule.cpp.i
+.PHONY : src/InterpreterModule.cpp.i
+
+src/InterpreterModule.s: src/InterpreterModule.cpp.s
+
+.PHONY : src/InterpreterModule.s
+
+# target to generate assembly for a file
+src/InterpreterModule.cpp.s:
+	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/InterpreterModule.cpp.s
+.PHONY : src/InterpreterModule.cpp.s
+
 src/Main.o: src/Main.cpp.o
 
 .PHONY : src/Main.o
@@ -230,6 +311,33 @@ src/Main.s: src/Main.cpp.s
 src/Main.cpp.s:
 	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
+
+src/Parser.o: src/Parser.cpp.o
+
+.PHONY : src/Parser.o
+
+# target to build an object file
+src/Parser.cpp.o:
+	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/Parser.cpp.o
+.PHONY : src/Parser.cpp.o
+
+src/Parser.i: src/Parser.cpp.i
+
+.PHONY : src/Parser.i
+
+# target to preprocess a source file
+src/Parser.cpp.i:
+	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/Parser.cpp.i
+.PHONY : src/Parser.cpp.i
+
+src/Parser.s: src/Parser.cpp.s
+
+.PHONY : src/Parser.s
+
+# target to generate assembly for a file
+src/Parser.cpp.s:
+	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/Parser.cpp.s
+.PHONY : src/Parser.cpp.s
 
 src/Scanner.o: src/Scanner.cpp.o
 
@@ -312,6 +420,33 @@ src/TokenType.cpp.s:
 	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/TokenType.cpp.s
 .PHONY : src/TokenType.cpp.s
 
+src/Types.o: src/Types.cpp.o
+
+.PHONY : src/Types.o
+
+# target to build an object file
+src/Types.cpp.o:
+	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/Types.cpp.o
+.PHONY : src/Types.cpp.o
+
+src/Types.i: src/Types.cpp.i
+
+.PHONY : src/Types.i
+
+# target to preprocess a source file
+src/Types.cpp.i:
+	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/Types.cpp.i
+.PHONY : src/Types.cpp.i
+
+src/Types.s: src/Types.cpp.s
+
+.PHONY : src/Types.s
+
+# target to generate assembly for a file
+src/Types.cpp.s:
+	$(MAKE) -f CMakeFiles/LambdaPL.dir/build.make CMakeFiles/LambdaPL.dir/src/Types.cpp.s
+.PHONY : src/Types.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -324,15 +459,27 @@ help:
 	@echo "... src/ASTNodes.o"
 	@echo "... src/ASTNodes.i"
 	@echo "... src/ASTNodes.s"
+	@echo "... src/Environment.o"
+	@echo "... src/Environment.i"
+	@echo "... src/Environment.s"
 	@echo "... src/ErrorHandler.o"
 	@echo "... src/ErrorHandler.i"
 	@echo "... src/ErrorHandler.s"
+	@echo "... src/Evaluator.o"
+	@echo "... src/Evaluator.i"
+	@echo "... src/Evaluator.s"
 	@echo "... src/FileReader.o"
 	@echo "... src/FileReader.i"
 	@echo "... src/FileReader.s"
+	@echo "... src/InterpreterModule.o"
+	@echo "... src/InterpreterModule.i"
+	@echo "... src/InterpreterModule.s"
 	@echo "... src/Main.o"
 	@echo "... src/Main.i"
 	@echo "... src/Main.s"
+	@echo "... src/Parser.o"
+	@echo "... src/Parser.i"
+	@echo "... src/Parser.s"
 	@echo "... src/Scanner.o"
 	@echo "... src/Scanner.i"
 	@echo "... src/Scanner.s"
@@ -342,6 +489,9 @@ help:
 	@echo "... src/TokenType.o"
 	@echo "... src/TokenType.i"
 	@echo "... src/TokenType.s"
+	@echo "... src/Types.o"
+	@echo "... src/Types.i"
+	@echo "... src/Types.s"
 .PHONY : help
 
 

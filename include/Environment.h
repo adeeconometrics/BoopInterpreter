@@ -15,7 +15,7 @@
 namespace boop {
 
 class Environment : public Uncopyable,
-                    std::enable_share_from_this<Environment> {
+                    public std::enable_shared_from_this<Environment> {
 public:
   using EnvironmentPtr = std::shared_ptr<Environment>;
 

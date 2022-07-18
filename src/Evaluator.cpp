@@ -1,6 +1,6 @@
-#include "Evaluator.h"
-#include "ErrorHandler.h"
-#include "Types.h"
+#include "../include/Evaluator.h"
+#include "../include/ErrorHandler.h"
+#include "../include/Types.h"
 
 #include <chrono>
 

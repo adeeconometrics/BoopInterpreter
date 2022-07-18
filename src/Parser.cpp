@@ -1,8 +1,8 @@
-#include "Parser.h"
-#include "ASTNodes.h"
-#include "Token.h"
-#include "TokenType.h"
-#include "Types.h"
+#include "../include/Parser.h"
+#include "../include/ASTNodes.h"
+#include "../include/Token.h"
+#include "../include/TokenType.h"
+#include "../include/Types.h"
 
 #include <exception>
 #include <function>

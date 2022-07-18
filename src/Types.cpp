@@ -1,6 +1,6 @@
-#include "Types.h"
-#include "Token.h"
-#include "ErrorHandler.h"
+#include "../include/Types.h"
+#include "../include/Token.h"
+#include "../include/ErrorHandler.h"
 
 #include <cstddef>
 #include <map>

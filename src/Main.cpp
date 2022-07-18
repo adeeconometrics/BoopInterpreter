@@ -1,3 +1,8 @@
+#include "../include/ErrorHandler.h"
+#include "../include/FileReader.h"
+#include "../include/Scanner.h"
+#include "../include/Token.h"
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -6,10 +11,6 @@ using std::cout;
 using std::string;
 using std::vector;
 
-#include "ErrorHandler.h"
-#include "FileReader.h"
-#include "Scanner.h"
-#include "Token.h"
 
 namespace boop {
 

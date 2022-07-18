@@ -1,7 +1,9 @@
-#include "ASTNodes.h"
+#include "../include/ASTNodes.h"
+#include "../include/Token.h"
 
 
 namespace boop::AST {
+
 ExprBinary::ExprBinary(ExprPtrVariant left, Token op, ExprPtrVariant right)
     : left(std::move(left)), op(std::move(op)), right(std::move(right)) {}
 

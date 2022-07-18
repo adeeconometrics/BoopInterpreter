@@ -1,4 +1,6 @@
 #include "ErrorHandler.h"
+#include "Token.h"
+#include "Types.h"
 
 #include <iostream>
 #include <string>

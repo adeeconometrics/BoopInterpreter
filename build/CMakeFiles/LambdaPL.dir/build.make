@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/amianadave/documents/LambdaInterpreter
+CMAKE_SOURCE_DIR = /mnt/c/Users/amianadave/Documents/LambdaInterpreter
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/amianadave/documents/LambdaInterpreter/build
+CMAKE_BINARY_DIR = /mnt/c/Users/amianadave/Documents/LambdaInterpreter/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/LambdaPL.dir/depend.make
@@ -59,118 +59,193 @@ include CMakeFiles/LambdaPL.dir/flags.make
 
 CMakeFiles/LambdaPL.dir/src/ASTNodes.cpp.o: CMakeFiles/LambdaPL.dir/flags.make
 CMakeFiles/LambdaPL.dir/src/ASTNodes.cpp.o: ../src/ASTNodes.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/amianadave/documents/LambdaInterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LambdaPL.dir/src/ASTNodes.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LambdaPL.dir/src/ASTNodes.cpp.o -c /mnt/c/Users/amianadave/documents/LambdaInterpreter/src/ASTNodes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/amianadave/Documents/LambdaInterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LambdaPL.dir/src/ASTNodes.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LambdaPL.dir/src/ASTNodes.cpp.o -c /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/ASTNodes.cpp
 
 CMakeFiles/LambdaPL.dir/src/ASTNodes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LambdaPL.dir/src/ASTNodes.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/amianadave/documents/LambdaInterpreter/src/ASTNodes.cpp > CMakeFiles/LambdaPL.dir/src/ASTNodes.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/ASTNodes.cpp > CMakeFiles/LambdaPL.dir/src/ASTNodes.cpp.i
 
 CMakeFiles/LambdaPL.dir/src/ASTNodes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LambdaPL.dir/src/ASTNodes.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/amianadave/documents/LambdaInterpreter/src/ASTNodes.cpp -o CMakeFiles/LambdaPL.dir/src/ASTNodes.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/ASTNodes.cpp -o CMakeFiles/LambdaPL.dir/src/ASTNodes.cpp.s
+
+CMakeFiles/LambdaPL.dir/src/Environment.cpp.o: CMakeFiles/LambdaPL.dir/flags.make
+CMakeFiles/LambdaPL.dir/src/Environment.cpp.o: ../src/Environment.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/amianadave/Documents/LambdaInterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LambdaPL.dir/src/Environment.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LambdaPL.dir/src/Environment.cpp.o -c /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/Environment.cpp
+
+CMakeFiles/LambdaPL.dir/src/Environment.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LambdaPL.dir/src/Environment.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/Environment.cpp > CMakeFiles/LambdaPL.dir/src/Environment.cpp.i
+
+CMakeFiles/LambdaPL.dir/src/Environment.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LambdaPL.dir/src/Environment.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/Environment.cpp -o CMakeFiles/LambdaPL.dir/src/Environment.cpp.s
 
 CMakeFiles/LambdaPL.dir/src/ErrorHandler.cpp.o: CMakeFiles/LambdaPL.dir/flags.make
 CMakeFiles/LambdaPL.dir/src/ErrorHandler.cpp.o: ../src/ErrorHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/amianadave/documents/LambdaInterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LambdaPL.dir/src/ErrorHandler.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LambdaPL.dir/src/ErrorHandler.cpp.o -c /mnt/c/Users/amianadave/documents/LambdaInterpreter/src/ErrorHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/amianadave/Documents/LambdaInterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LambdaPL.dir/src/ErrorHandler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LambdaPL.dir/src/ErrorHandler.cpp.o -c /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/ErrorHandler.cpp
 
 CMakeFiles/LambdaPL.dir/src/ErrorHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LambdaPL.dir/src/ErrorHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/amianadave/documents/LambdaInterpreter/src/ErrorHandler.cpp > CMakeFiles/LambdaPL.dir/src/ErrorHandler.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/ErrorHandler.cpp > CMakeFiles/LambdaPL.dir/src/ErrorHandler.cpp.i
 
 CMakeFiles/LambdaPL.dir/src/ErrorHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LambdaPL.dir/src/ErrorHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/amianadave/documents/LambdaInterpreter/src/ErrorHandler.cpp -o CMakeFiles/LambdaPL.dir/src/ErrorHandler.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/ErrorHandler.cpp -o CMakeFiles/LambdaPL.dir/src/ErrorHandler.cpp.s
+
+CMakeFiles/LambdaPL.dir/src/Evaluator.cpp.o: CMakeFiles/LambdaPL.dir/flags.make
+CMakeFiles/LambdaPL.dir/src/Evaluator.cpp.o: ../src/Evaluator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/amianadave/Documents/LambdaInterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LambdaPL.dir/src/Evaluator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LambdaPL.dir/src/Evaluator.cpp.o -c /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/Evaluator.cpp
+
+CMakeFiles/LambdaPL.dir/src/Evaluator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LambdaPL.dir/src/Evaluator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/Evaluator.cpp > CMakeFiles/LambdaPL.dir/src/Evaluator.cpp.i
+
+CMakeFiles/LambdaPL.dir/src/Evaluator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LambdaPL.dir/src/Evaluator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/Evaluator.cpp -o CMakeFiles/LambdaPL.dir/src/Evaluator.cpp.s
 
 CMakeFiles/LambdaPL.dir/src/FileReader.cpp.o: CMakeFiles/LambdaPL.dir/flags.make
 CMakeFiles/LambdaPL.dir/src/FileReader.cpp.o: ../src/FileReader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/amianadave/documents/LambdaInterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LambdaPL.dir/src/FileReader.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LambdaPL.dir/src/FileReader.cpp.o -c /mnt/c/Users/amianadave/documents/LambdaInterpreter/src/FileReader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/amianadave/Documents/LambdaInterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LambdaPL.dir/src/FileReader.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LambdaPL.dir/src/FileReader.cpp.o -c /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/FileReader.cpp
 
 CMakeFiles/LambdaPL.dir/src/FileReader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LambdaPL.dir/src/FileReader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/amianadave/documents/LambdaInterpreter/src/FileReader.cpp > CMakeFiles/LambdaPL.dir/src/FileReader.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/FileReader.cpp > CMakeFiles/LambdaPL.dir/src/FileReader.cpp.i
 
 CMakeFiles/LambdaPL.dir/src/FileReader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LambdaPL.dir/src/FileReader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/amianadave/documents/LambdaInterpreter/src/FileReader.cpp -o CMakeFiles/LambdaPL.dir/src/FileReader.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/FileReader.cpp -o CMakeFiles/LambdaPL.dir/src/FileReader.cpp.s
+
+CMakeFiles/LambdaPL.dir/src/InterpreterModule.cpp.o: CMakeFiles/LambdaPL.dir/flags.make
+CMakeFiles/LambdaPL.dir/src/InterpreterModule.cpp.o: ../src/InterpreterModule.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/amianadave/Documents/LambdaInterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/LambdaPL.dir/src/InterpreterModule.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LambdaPL.dir/src/InterpreterModule.cpp.o -c /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/InterpreterModule.cpp
+
+CMakeFiles/LambdaPL.dir/src/InterpreterModule.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LambdaPL.dir/src/InterpreterModule.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/InterpreterModule.cpp > CMakeFiles/LambdaPL.dir/src/InterpreterModule.cpp.i
+
+CMakeFiles/LambdaPL.dir/src/InterpreterModule.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LambdaPL.dir/src/InterpreterModule.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/InterpreterModule.cpp -o CMakeFiles/LambdaPL.dir/src/InterpreterModule.cpp.s
 
 CMakeFiles/LambdaPL.dir/src/Main.cpp.o: CMakeFiles/LambdaPL.dir/flags.make
 CMakeFiles/LambdaPL.dir/src/Main.cpp.o: ../src/Main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/amianadave/documents/LambdaInterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LambdaPL.dir/src/Main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LambdaPL.dir/src/Main.cpp.o -c /mnt/c/Users/amianadave/documents/LambdaInterpreter/src/Main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/amianadave/Documents/LambdaInterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/LambdaPL.dir/src/Main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LambdaPL.dir/src/Main.cpp.o -c /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/Main.cpp
 
 CMakeFiles/LambdaPL.dir/src/Main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LambdaPL.dir/src/Main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/amianadave/documents/LambdaInterpreter/src/Main.cpp > CMakeFiles/LambdaPL.dir/src/Main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/Main.cpp > CMakeFiles/LambdaPL.dir/src/Main.cpp.i
 
 CMakeFiles/LambdaPL.dir/src/Main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LambdaPL.dir/src/Main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/amianadave/documents/LambdaInterpreter/src/Main.cpp -o CMakeFiles/LambdaPL.dir/src/Main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/Main.cpp -o CMakeFiles/LambdaPL.dir/src/Main.cpp.s
+
+CMakeFiles/LambdaPL.dir/src/Parser.cpp.o: CMakeFiles/LambdaPL.dir/flags.make
+CMakeFiles/LambdaPL.dir/src/Parser.cpp.o: ../src/Parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/amianadave/Documents/LambdaInterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LambdaPL.dir/src/Parser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LambdaPL.dir/src/Parser.cpp.o -c /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/Parser.cpp
+
+CMakeFiles/LambdaPL.dir/src/Parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LambdaPL.dir/src/Parser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/Parser.cpp > CMakeFiles/LambdaPL.dir/src/Parser.cpp.i
+
+CMakeFiles/LambdaPL.dir/src/Parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LambdaPL.dir/src/Parser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/Parser.cpp -o CMakeFiles/LambdaPL.dir/src/Parser.cpp.s
 
 CMakeFiles/LambdaPL.dir/src/Scanner.cpp.o: CMakeFiles/LambdaPL.dir/flags.make
 CMakeFiles/LambdaPL.dir/src/Scanner.cpp.o: ../src/Scanner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/amianadave/documents/LambdaInterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LambdaPL.dir/src/Scanner.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LambdaPL.dir/src/Scanner.cpp.o -c /mnt/c/Users/amianadave/documents/LambdaInterpreter/src/Scanner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/amianadave/Documents/LambdaInterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/LambdaPL.dir/src/Scanner.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LambdaPL.dir/src/Scanner.cpp.o -c /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/Scanner.cpp
 
 CMakeFiles/LambdaPL.dir/src/Scanner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LambdaPL.dir/src/Scanner.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/amianadave/documents/LambdaInterpreter/src/Scanner.cpp > CMakeFiles/LambdaPL.dir/src/Scanner.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/Scanner.cpp > CMakeFiles/LambdaPL.dir/src/Scanner.cpp.i
 
 CMakeFiles/LambdaPL.dir/src/Scanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LambdaPL.dir/src/Scanner.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/amianadave/documents/LambdaInterpreter/src/Scanner.cpp -o CMakeFiles/LambdaPL.dir/src/Scanner.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/Scanner.cpp -o CMakeFiles/LambdaPL.dir/src/Scanner.cpp.s
 
 CMakeFiles/LambdaPL.dir/src/Token.cpp.o: CMakeFiles/LambdaPL.dir/flags.make
 CMakeFiles/LambdaPL.dir/src/Token.cpp.o: ../src/Token.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/amianadave/documents/LambdaInterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/LambdaPL.dir/src/Token.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LambdaPL.dir/src/Token.cpp.o -c /mnt/c/Users/amianadave/documents/LambdaInterpreter/src/Token.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/amianadave/Documents/LambdaInterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/LambdaPL.dir/src/Token.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LambdaPL.dir/src/Token.cpp.o -c /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/Token.cpp
 
 CMakeFiles/LambdaPL.dir/src/Token.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LambdaPL.dir/src/Token.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/amianadave/documents/LambdaInterpreter/src/Token.cpp > CMakeFiles/LambdaPL.dir/src/Token.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/Token.cpp > CMakeFiles/LambdaPL.dir/src/Token.cpp.i
 
 CMakeFiles/LambdaPL.dir/src/Token.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LambdaPL.dir/src/Token.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/amianadave/documents/LambdaInterpreter/src/Token.cpp -o CMakeFiles/LambdaPL.dir/src/Token.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/Token.cpp -o CMakeFiles/LambdaPL.dir/src/Token.cpp.s
 
 CMakeFiles/LambdaPL.dir/src/TokenType.cpp.o: CMakeFiles/LambdaPL.dir/flags.make
 CMakeFiles/LambdaPL.dir/src/TokenType.cpp.o: ../src/TokenType.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/amianadave/documents/LambdaInterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/LambdaPL.dir/src/TokenType.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LambdaPL.dir/src/TokenType.cpp.o -c /mnt/c/Users/amianadave/documents/LambdaInterpreter/src/TokenType.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/amianadave/Documents/LambdaInterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/LambdaPL.dir/src/TokenType.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LambdaPL.dir/src/TokenType.cpp.o -c /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/TokenType.cpp
 
 CMakeFiles/LambdaPL.dir/src/TokenType.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LambdaPL.dir/src/TokenType.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/amianadave/documents/LambdaInterpreter/src/TokenType.cpp > CMakeFiles/LambdaPL.dir/src/TokenType.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/TokenType.cpp > CMakeFiles/LambdaPL.dir/src/TokenType.cpp.i
 
 CMakeFiles/LambdaPL.dir/src/TokenType.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LambdaPL.dir/src/TokenType.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/amianadave/documents/LambdaInterpreter/src/TokenType.cpp -o CMakeFiles/LambdaPL.dir/src/TokenType.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/TokenType.cpp -o CMakeFiles/LambdaPL.dir/src/TokenType.cpp.s
+
+CMakeFiles/LambdaPL.dir/src/Types.cpp.o: CMakeFiles/LambdaPL.dir/flags.make
+CMakeFiles/LambdaPL.dir/src/Types.cpp.o: ../src/Types.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/amianadave/Documents/LambdaInterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/LambdaPL.dir/src/Types.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LambdaPL.dir/src/Types.cpp.o -c /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/Types.cpp
+
+CMakeFiles/LambdaPL.dir/src/Types.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LambdaPL.dir/src/Types.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/Types.cpp > CMakeFiles/LambdaPL.dir/src/Types.cpp.i
+
+CMakeFiles/LambdaPL.dir/src/Types.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LambdaPL.dir/src/Types.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/amianadave/Documents/LambdaInterpreter/src/Types.cpp -o CMakeFiles/LambdaPL.dir/src/Types.cpp.s
 
 # Object files for target LambdaPL
 LambdaPL_OBJECTS = \
 "CMakeFiles/LambdaPL.dir/src/ASTNodes.cpp.o" \
+"CMakeFiles/LambdaPL.dir/src/Environment.cpp.o" \
 "CMakeFiles/LambdaPL.dir/src/ErrorHandler.cpp.o" \
+"CMakeFiles/LambdaPL.dir/src/Evaluator.cpp.o" \
 "CMakeFiles/LambdaPL.dir/src/FileReader.cpp.o" \
+"CMakeFiles/LambdaPL.dir/src/InterpreterModule.cpp.o" \
 "CMakeFiles/LambdaPL.dir/src/Main.cpp.o" \
+"CMakeFiles/LambdaPL.dir/src/Parser.cpp.o" \
 "CMakeFiles/LambdaPL.dir/src/Scanner.cpp.o" \
 "CMakeFiles/LambdaPL.dir/src/Token.cpp.o" \
-"CMakeFiles/LambdaPL.dir/src/TokenType.cpp.o"
+"CMakeFiles/LambdaPL.dir/src/TokenType.cpp.o" \
+"CMakeFiles/LambdaPL.dir/src/Types.cpp.o"
 
 # External object files for target LambdaPL
 LambdaPL_EXTERNAL_OBJECTS =
 
 LambdaPL: CMakeFiles/LambdaPL.dir/src/ASTNodes.cpp.o
+LambdaPL: CMakeFiles/LambdaPL.dir/src/Environment.cpp.o
 LambdaPL: CMakeFiles/LambdaPL.dir/src/ErrorHandler.cpp.o
+LambdaPL: CMakeFiles/LambdaPL.dir/src/Evaluator.cpp.o
 LambdaPL: CMakeFiles/LambdaPL.dir/src/FileReader.cpp.o
+LambdaPL: CMakeFiles/LambdaPL.dir/src/InterpreterModule.cpp.o
 LambdaPL: CMakeFiles/LambdaPL.dir/src/Main.cpp.o
+LambdaPL: CMakeFiles/LambdaPL.dir/src/Parser.cpp.o
 LambdaPL: CMakeFiles/LambdaPL.dir/src/Scanner.cpp.o
 LambdaPL: CMakeFiles/LambdaPL.dir/src/Token.cpp.o
 LambdaPL: CMakeFiles/LambdaPL.dir/src/TokenType.cpp.o
+LambdaPL: CMakeFiles/LambdaPL.dir/src/Types.cpp.o
 LambdaPL: CMakeFiles/LambdaPL.dir/build.make
 LambdaPL: CMakeFiles/LambdaPL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/amianadave/documents/LambdaInterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable LambdaPL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/amianadave/Documents/LambdaInterpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable LambdaPL"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LambdaPL.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -183,6 +258,6 @@ CMakeFiles/LambdaPL.dir/clean:
 .PHONY : CMakeFiles/LambdaPL.dir/clean
 
 CMakeFiles/LambdaPL.dir/depend:
-	cd /mnt/c/Users/amianadave/documents/LambdaInterpreter/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/amianadave/documents/LambdaInterpreter /mnt/c/Users/amianadave/documents/LambdaInterpreter /mnt/c/Users/amianadave/documents/LambdaInterpreter/build /mnt/c/Users/amianadave/documents/LambdaInterpreter/build /mnt/c/Users/amianadave/documents/LambdaInterpreter/build/CMakeFiles/LambdaPL.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/amianadave/Documents/LambdaInterpreter/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/amianadave/Documents/LambdaInterpreter /mnt/c/Users/amianadave/Documents/LambdaInterpreter /mnt/c/Users/amianadave/Documents/LambdaInterpreter/build /mnt/c/Users/amianadave/Documents/LambdaInterpreter/build /mnt/c/Users/amianadave/Documents/LambdaInterpreter/build/CMakeFiles/LambdaPL.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/LambdaPL.dir/depend
 

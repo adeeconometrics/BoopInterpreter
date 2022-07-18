@@ -16,7 +16,7 @@ class Token {
 
 public:
     Token(const TokenType& _type, const std::string& _lexeme, 
-        const OptionalLiteral& _literal, int _line ); // uncertain how to parse std::any
+        const OptionalLiteral& _literal, int _line ); 
     
     auto to_string() const noexcept -> std::string;
     auto get_type() const noexcept -> TokenType;

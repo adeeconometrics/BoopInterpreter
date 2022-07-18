@@ -1,4 +1,4 @@
-#include "FileReader.h"
+#include "../include/FileReader.h"
 
 FileReader::FileReader(std::string_view fname) {
   m_handler.open(static_cast<std::string>(fname), std::fstream::in);

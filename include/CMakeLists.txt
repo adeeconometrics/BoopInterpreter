@@ -1,13 +1,13 @@
 add_library(
 	include
-	ASTNodes.h
+	Token.h 
+	TokenType.h
 	ErrorHandler.h
 	FileReader.h
+	Scanner.h
+	Types.h
+	Parser.h
+	Environment.h
 	Evaluator.h 
 	InterpreterModule.h
-	Parser.h
-	Scanner.h
-	Token.h
-	TokenType.h
-	Types.h
 )

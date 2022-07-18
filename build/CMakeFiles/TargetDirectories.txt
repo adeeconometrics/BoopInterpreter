@@ -1,3 +1,3 @@
-/mnt/c/Users/amianadave/documents/LambdaInterpreter/build/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/amianadave/documents/LambdaInterpreter/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/amianadave/documents/LambdaInterpreter/build/CMakeFiles/LambdaPL.dir
+/mnt/c/Users/amianadave/Documents/LambdaInterpreter/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/amianadave/Documents/LambdaInterpreter/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/amianadave/Documents/LambdaInterpreter/build/CMakeFiles/LambdaPL.dir
