@@ -1,4 +1,4 @@
-# LambdaInterpreter
+# BoopInterpreter
 
 Interpreted language that supports the following of features
 
