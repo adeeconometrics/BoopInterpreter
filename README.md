@@ -8,4 +8,3 @@ Interpreted language that supports the following of features
 - [ ] Math library 
 - [ ] Object Orientation
 
-Just example
